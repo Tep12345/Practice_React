@@ -6,7 +6,7 @@ import {
 import type { Schema } from "./resource";
 
 // initialize bedrock runtime client
-const client = new BedrockRuntimeClient();
+const client = new BedrockRuntimeClient({ region: process.env.MODEL_REGION });
 
 export const handler: Schema["generateHaiku"]["functionHandler"] = async (
   event,

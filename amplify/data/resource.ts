@@ -30,11 +30,13 @@ and "delete" any "Todo" records.
 // });
 
 export const MODEL_ID = "anthropic.claude-3-haiku-20240307-v1:0";
+export const MODEL_REGION = "ap-northeast-1";
 
 export const generateHaikuFunction = defineFunction({
   entry: "./generateHaiku.ts",
   environment: {
     MODEL_ID,
+    MODEL_REGION,
   },
 });
 
