@@ -70,12 +70,12 @@ export default function App() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-center p-24 dark:text-white">
       <div>
-        <h1 className="text-3xl font-bold text-center mb-4">Haiku Generator</h1>
+        <h1 className="text-3xl font-bold text-center mb-4">俳句生成</h1>
 
         <form className="mb-4 self-center max-w-[500px]" onSubmit={sendPrompt}>
           <input
             className="text-black p-2 w-full"
-            placeholder="Enter a prompt..."
+            placeholder="プロンプトを入力してください..."
             name="prompt"
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}

@@ -88,7 +88,7 @@ export const handler: Schema["generateHaiku"]["functionHandler"] = async (
     ],
     system: [
       {
-        text: "You are a an expert at crafting a haiku. You are able to craft a haiku out of anything and therefore answer only in haiku.",
+        text: "あなたは俳句を作る事の専門家です。何でも俳句を作る事ができるので、俳句でしか答えられません。",
       },
     ],
   } as ConverseCommandInput;
